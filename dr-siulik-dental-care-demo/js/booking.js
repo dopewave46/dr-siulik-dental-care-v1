@@ -8,11 +8,11 @@
   const nextBtns = wrap.querySelectorAll('[data-step-next]');
   const prevBtns = wrap.querySelectorAll('[data-step-prev]');
   const treatmentCards = wrap.querySelectorAll('.pick-card[data-treatment]');
-  const dateCards = wrap.querySelectorAll('.pick-card[data-date]');
   const timeCards = wrap.querySelectorAll('.pick-card[data-time]');
+  const calendarEl = document.getElementById('booking-calendar');
 
   let current = 0;
-  const state = { treatment: '', date: '', time: '', name: '', phone: '', email: '', message: '' };
+  const state = { treatment: '', date: '', dateISO: '', time: '', name: '', phone: '', email: '', message: '' };
 
   function goTo(index) {
     steps[current].classList.remove('is-active');
@@ -28,15 +28,19 @@
     if (current === steps.length - 2) fillReview();
   }
 
-  function selectCard(group, card, key) {
+  function selectCard(group, card, key, autoAdvance) {
     group.forEach((c) => c.classList.remove('is-selected'));
     card.classList.add('is-selected');
     state[key] = card.dataset[key] || card.textContent.trim();
+    if (autoAdvance) {
+      setTimeout(() => {
+        if (current < steps.length - 1) goTo(current + 1);
+      }, 380);
+    }
   }
 
-  treatmentCards.forEach((c) => c.addEventListener('click', () => selectCard(treatmentCards, c, 'treatment')));
-  dateCards.forEach((c) => c.addEventListener('click', () => selectCard(dateCards, c, 'date')));
-  timeCards.forEach((c) => c.addEventListener('click', () => selectCard(timeCards, c, 'time')));
+  treatmentCards.forEach((c) => c.addEventListener('click', () => selectCard(treatmentCards, c, 'treatment', true)));
+  timeCards.forEach((c) => c.addEventListener('click', () => selectCard(timeCards, c, 'time', true)));
 
   nextBtns.forEach((btn) =>
     btn.addEventListener('click', () => {
@@ -76,6 +80,87 @@
     } catch (e) {}
     window.location.href = 'appointment-confirmation.html';
   });
+
+  /* ===================== CALENDAR WIDGET ===================== */
+  if (calendarEl) {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    let viewYear = today.getFullYear();
+    let viewMonth = today.getMonth();
+    let selectedISO = null;
+
+    const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+    const WEEKDAYS = ['S','M','T','W','T','F','S'];
+    const iconLeft = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>';
+    const iconRight = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>';
+
+    function isoDate(y, m, d) {
+      return `${y}-${String(m + 1).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
+    }
+
+    function formatDisplay(y, m, d) {
+      const dt = new Date(y, m, d);
+      const weekday = dt.toLocaleDateString('en-US', { weekday: 'short' });
+      const month = dt.toLocaleDateString('en-US', { month: 'short' });
+      return `${weekday}, ${d} ${month}`;
+    }
+
+    function render() {
+      const firstDay = new Date(viewYear, viewMonth, 1).getDay();
+      const daysInMonth = new Date(viewYear, viewMonth + 1, 0).getDate();
+      const isCurrentMonth = viewYear === today.getFullYear() && viewMonth === today.getMonth();
+
+      let html = `
+        <div class="cal-head">
+          <h4>${MONTHS[viewMonth]} ${viewYear}</h4>
+          <div class="cal-nav">
+            <button type="button" data-cal-prev ${isCurrentMonth ? 'disabled' : ''} aria-label="Previous month">${iconLeft}</button>
+            <button type="button" data-cal-next aria-label="Next month">${iconRight}</button>
+          </div>
+        </div>
+        <div class="cal-weekdays">${WEEKDAYS.map((w) => `<span>${w}</span>`).join('')}</div>
+        <div class="cal-days">`;
+
+      for (let i = 0; i < firstDay; i++) {
+        html += `<button type="button" class="cal-day is-empty" disabled tabindex="-1"></button>`;
+      }
+      for (let d = 1; d <= daysInMonth; d++) {
+        const dateObj = new Date(viewYear, viewMonth, d);
+        const iso = isoDate(viewYear, viewMonth, d);
+        const isPast = dateObj < today;
+        const isToday = dateObj.getTime() === today.getTime();
+        const isSelected = iso === selectedISO;
+        html += `<button type="button" class="cal-day${isToday ? ' is-today' : ''}${isSelected ? ' is-selected' : ''}" data-iso="${iso}" ${isPast ? 'disabled' : ''} aria-label="${formatDisplay(viewYear, viewMonth, d)}">${d}</button>`;
+      }
+      html += `</div>`;
+      calendarEl.innerHTML = html;
+
+      calendarEl.querySelector('[data-cal-prev]')?.addEventListener('click', () => {
+        viewMonth -= 1;
+        if (viewMonth < 0) { viewMonth = 11; viewYear -= 1; }
+        render();
+      });
+      calendarEl.querySelector('[data-cal-next]')?.addEventListener('click', () => {
+        viewMonth += 1;
+        if (viewMonth > 11) { viewMonth = 0; viewYear += 1; }
+        render();
+      });
+      calendarEl.querySelectorAll('.cal-day[data-iso]').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const [y, m, d] = btn.dataset.iso.split('-').map(Number);
+          selectedISO = btn.dataset.iso;
+          state.dateISO = selectedISO;
+          state.date = formatDisplay(y, m - 1, d);
+          render();
+          setTimeout(() => {
+            if (current < steps.length - 1) goTo(current + 1);
+          }, 380);
+        });
+      });
+    }
+
+    render();
+  }
 
   goTo(0);
 })();

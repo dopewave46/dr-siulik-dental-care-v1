@@ -154,7 +154,7 @@ p{ margin:0 0 1em; color: var(--ink-600); line-height:1.65; }
 /* ===================== NAVBAR ===================== */
 .navbar{
   position: sticky; top:0; z-index:200;
-  background: rgba(246,251,253,.78);
+  background: rgba(246,251,253,.94);
   backdrop-filter: blur(14px) saturate(160%);
   border-bottom: 1px solid rgba(220,233,240,.7);
   transition: box-shadow var(--dur-md) var(--ease), background var(--dur-md) var(--ease);
@@ -206,7 +206,7 @@ p{ margin:0 0 1em; color: var(--ink-600); line-height:1.65; }
 .mobile-menu{
   position:fixed; inset:0; z-index:300;
   background: linear-gradient(165deg, var(--navy-950), var(--navy-900) 60%, var(--teal-600) 150%);
-  display:flex; flex-direction:column;
+  display:flex; flex-direction:column; overflow-y:auto;
   opacity:0; visibility:hidden; pointer-events:none;
   transition: opacity var(--dur-md) var(--ease), visibility var(--dur-md);
 }
@@ -243,12 +243,14 @@ p{ margin:0 0 1em; color: var(--ink-600); line-height:1.65; }
 .mobile-menu.is-open .mobile-nav a:nth-child(7){ transition-delay: 390ms; }
 .mobile-menu.is-open .mobile-nav a:nth-child(8){ transition-delay: 440ms; }
 .mobile-menu-bottom{
-  padding: 22px var(--gutter) 34px; display:flex; flex-direction:column; gap:16px;
+  padding: 20px var(--gutter) max(28px, calc(env(safe-area-inset-bottom, 0px) + 20px));
+  display:flex; flex-direction:column; gap:14px;
   border-top: 1px solid rgba(255,255,255,.1);
   opacity:0; transform: translateY(14px); transition: all var(--dur-md) var(--ease) 480ms;
+  flex:none;
 }
 .mobile-menu.is-open .mobile-menu-bottom{ opacity:1; transform:none; }
-.mobile-menu-bottom .btn-primary{ width:100%; }
+.mobile-menu-bottom .btn-primary{ width:100%; padding:16px 28px; font-size:16px; }
 .mobile-contact{ display:flex; flex-wrap:wrap; gap:14px 22px; font-size:14px; color: rgba(255,255,255,.75); }
 .mobile-contact a{ color:#fff; font-weight:600; }
 
@@ -610,7 +612,7 @@ p{ margin:0 0 1em; color: var(--ink-600); line-height:1.65; }
 .qa-btn:hover{ transform: scale(1.08); }
 .qa-btn svg{ width:24px; height:24px; }
 .qa-btn.qa-call{ background: var(--grad-brand); }
-.qa-btn.qa-whatsapp{ background: linear-gradient(135deg,#25D366,#128C7E); }
+.qa-btn.qa-whatsapp{ background: linear-gradient(135deg, var(--teal-400), var(--navy-800)); }
 .qa-toggle{
   width:60px; height:60px; border-radius:50%; display:grid; place-items:center;
   background: var(--grad-brand); color:#fff; box-shadow: var(--shadow-glow); flex:none;
