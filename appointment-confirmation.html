@@ -10,7 +10,7 @@
   <meta property="og:description" content="Demo appointment confirmation screen for Dr. Siulik's Dental Care." />
   <meta property="og:type" content="website" />
   <meta name="theme-color" content="#0a2540" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><rect width=%2224%22 height=%2224%22 rx=%226%22 fill=%22%230d7377%22/><text x=%2212%22 y=%2217%22 font-size=%2214%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22sans-serif%22>S</text></svg>" />
+  <link rel="icon" type="image/png" href="images/logo-transparent.png" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/responsive.css" />
 
@@ -18,15 +18,11 @@
 <body class="" data-no-popup>
   <header class="navbar">
     <div class="container nav-inner">
-      <a href="index.html" class="brand">
-        <span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c-2.2 0-3 1.1-4.3 1.1C6.2 4.1 5 3.3 5 5.5c0 2.6.9 4 1.3 7 .3 2.4.9 6.5 2.4 6.5 1.2 0 1.1-3 1.6-4.6.3-1 .7-1.4 1.7-1.4s1.4.4 1.7 1.4c.5 1.6.4 4.6 1.6 4.6 1.5 0 2.1-4.1 2.4-6.5.4-3 1.3-4.4 1.3-7 0-2.2-1.2-1.4-2.7-1.4C15 4.1 14.2 3 12 3Z"/></svg></span>
-        <span class="brand-name">Dr. Siulik's<span>DENTAL CARE</span></span>
-      </a>
+      <a href="index.html" class="brand"><img src="images/logo-transparent.png" alt="Dr. Siulik's Dental Care" style="height:52px;width:auto;object-fit:contain;" /></a>
       <nav class="nav-links" aria-label="Primary">
         <a href="index.html" class="">Home</a>
         <a href="about.html" class="">About</a>
         <a href="treatments.html" class="">Treatments</a>
-        <a href="smile-makeovers.html" class="">Smile Makeovers</a>
         <a href="gallery.html" class="">Gallery</a>
         <a href="testimonials.html" class="">Testimonials</a>
         <a href="contact.html" class="">Contact</a>
@@ -43,17 +39,13 @@
 
   <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
     <div class="mobile-menu-top">
-      <a href="index.html" class="brand">
-        <span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c-2.2 0-3 1.1-4.3 1.1C6.2 4.1 5 3.3 5 5.5c0 2.6.9 4 1.3 7 .3 2.4.9 6.5 2.4 6.5 1.2 0 1.1-3 1.6-4.6.3-1 .7-1.4 1.7-1.4s1.4.4 1.7 1.4c.5 1.6.4 4.6 1.6 4.6 1.5 0 2.1-4.1 2.4-6.5.4-3 1.3-4.4 1.3-7 0-2.2-1.2-1.4-2.7-1.4C15 4.1 14.2 3 12 3Z"/></svg></span>
-        <span class="brand-name">Dr. Siulik's<span>DENTAL CARE</span></span>
-      </a>
+      <a href="index.html" class="brand"><img src="images/logo-transparent.png" alt="Dr. Siulik's Dental Care" style="height:52px;width:auto;object-fit:contain;" /></a>
       <button class="mobile-close" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
     </div>
     <nav class="mobile-nav" aria-label="Mobile Primary">
       <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="treatments.html">Treatments</a>
-        <a href="smile-makeovers.html">Smile Makeovers</a>
         <a href="gallery.html">Gallery</a>
         <a href="testimonials.html">Testimonials</a>
         <a href="contact.html">Contact</a>
@@ -83,19 +75,19 @@
       <div class="container" style="max-width:640px;">
         <div class="card text-center" style="padding:44px 30px;">
           <span class="tcard-ic" style="margin:0 auto 18px;background:var(--grad-brand);color:#fff;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="m8.3 12.3 2.4 2.4 5-5.4"/></svg></span>
-          <h2 style="font-size:26px;">Appointment Request Received</h2>
-          <p>Here's a summary of the demo appointment you just walked through.</p>
+          <h2 style="font-size:26px;">Almost done — one more step</h2>
+          <p>Your details are ready below. This website has <strong>not</strong> sent anything to the clinic yet — tap <strong>Send Booking on WhatsApp</strong> to actually notify us (we opened WhatsApp in a new tab for you; if it didn't open, use the button below).</p>
           <div style="text-align:left;margin:26px 0;">
             <div class="flex justify-between" style="padding:12px 0;border-bottom:1px solid var(--line);"><span style="color:var(--ink-400);font-size:13.5px;">Treatment</span><strong data-c="treatment"></strong></div>
             <div class="flex justify-between" style="padding:12px 0;border-bottom:1px solid var(--line);"><span style="color:var(--ink-400);font-size:13.5px;">Date</span><strong data-c="date"></strong></div>
             <div class="flex justify-between" style="padding:12px 0;border-bottom:1px solid var(--line);"><span style="color:var(--ink-400);font-size:13.5px;">Time</span><strong data-c="time"></strong></div>
             <div class="flex justify-between" style="padding:12px 0;"><span style="color:var(--ink-400);font-size:13.5px;">Patient</span><strong data-c="name"></strong></div>
           </div>
-          <div class="chip" style="margin-bottom:24px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 5 6v5.5c0 4.6 3 7.6 7 9 4-1.4 7-4.4 7-9V6l-7-2.5Z"/><path d="m8.7 12.2 2.3 2.3 4.3-4.6"/></svg> Demo Mode &mdash; this request has not been sent to the clinic</div>
+          <div class="chip" style="margin-bottom:24px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 5 6v5.5c0 4.6 3 7.6 7 9 4-1.4 7-4.4 7-9V6l-7-2.5Z"/><path d="m8.7 12.2 2.3 2.3 4.3-4.6"/></svg> Not sent yet — WhatsApp requires you to tap Send</div>
           <div class="flex gap-12" style="flex-wrap:wrap;justify-content:center;">
-            <a class="btn btn-primary" href="index.html">Return Home</a>
-            <a class="btn btn-ghost" href="tel:+919938674499"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 3.5h2.7l1.3 4-2 1.4a12 12 0 0 0 5.6 5.6l1.4-2 4 1.3v2.7c0 1.1-1 2-2.1 1.8-8-1-13.7-6.7-14.7-14.7-.1-1.1.8-2.1 1.8-2.1Z"/></svg> Call Clinic</a>
-            <a class="btn btn-ghost" href="https://wa.me/7008675007?text=Hi%21%20I%20just%20completed%20a%20demo%20booking%20on%20your%20site%20and%20wanted%20to%20confirm%20my%20appointment%20details." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3.2c-5 0-9 3.8-9 8.5 0 1.9.6 3.6 1.8 5L3.5 21l4.5-1.3c1.2.6 2.6 1 4 1 5 0 9-3.8 9-8.5s-4-9-9-9Z" fill-opacity=".12"/><path d="M12 4.4c-4.4 0-7.9 3.3-7.9 7.3 0 1.7.6 3.2 1.7 4.4l.3.4-.8 2.8 2.9-.8.4.2c1 .5 2.2.8 3.4.8 4.4 0 7.9-3.3 7.9-7.3s-3.5-7.8-7.9-7.8Zm4.3 10.4c-.2.5-1 1-1.5 1-.4.1-.9.1-1.4-.1-.3-.1-.7-.2-1.3-.5-2.2-.9-3.6-3.1-3.7-3.3-.1-.1-.9-1.1-.9-2.2 0-1 .5-1.5.7-1.8.2-.2.5-.3.6-.3h.5c.2 0 .3 0 .5.3.2.4.6 1.4.7 1.5.1.1.1.3 0 .4-.1.2-.1.3-.3.4l-.4.4c-.1.2-.3.3-.1.6.2.3.7 1.1 1.5 1.8.9.8 1.7 1.1 2 1.3.2.1.4.1.6-.1l.6-.7c.2-.2.4-.2.6-.1l1.4.7c.2.1.4.2.4.3.1.2.1.7-.1 1.2Z"/></svg> WhatsApp</a>
+            <a class="btn btn-primary" data-c-whatsapp href="https://wa.me/7008675007" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3.2c-5 0-9 3.8-9 8.5 0 1.9.6 3.6 1.8 5L3.5 21l4.5-1.3c1.2.6 2.6 1 4 1 5 0 9-3.8 9-8.5s-4-9-9-9Z" fill-opacity=".12"/><path d="M12 4.4c-4.4 0-7.9 3.3-7.9 7.3 0 1.7.6 3.2 1.7 4.4l.3.4-.8 2.8 2.9-.8.4.2c1 .5 2.2.8 3.4.8 4.4 0 7.9-3.3 7.9-7.3s-3.5-7.8-7.9-7.8Zm4.3 10.4c-.2.5-1 1-1.5 1-.4.1-.9.1-1.4-.1-.3-.1-.7-.2-1.3-.5-2.2-.9-3.6-3.1-3.7-3.3-.1-.1-.9-1.1-.9-2.2 0-1 .5-1.5.7-1.8.2-.2.5-.3.6-.3h.5c.2 0 .3 0 .5.3.2.4.6 1.4.7 1.5.1.1.1.3 0 .4-.1.2-.1.3-.3.4l-.4.4c-.1.2-.3.3-.1.6.2.3.7 1.1 1.5 1.8.9.8 1.7 1.1 2 1.3.2.1.4.1.6-.1l.6-.7c.2-.2.4-.2.6-.1l1.4.7c.2.1.4.2.4.3.1.2.1.7-.1 1.2Z"/></svg> Send Booking on WhatsApp</a>
+            <a class="btn btn-ghost" href="tel:+919938674499"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 3.5h2.7l1.3 4-2 1.4a12 12 0 0 0 5.6 5.6l1.4-2 4 1.3v2.7c0 1.1-1 2-2.1 1.8-8-1-13.7-6.7-14.7-14.7-.1-1.1.8-2.1 1.8-2.1Z"/></svg> Call Clinic Instead</a>
+            <a class="btn btn-ghost" href="index.html">Return Home</a>
           </div>
         </div>
       </div>
@@ -106,10 +98,7 @@
     <div class="container">
       <div class="footer-top">
         <div class="footer-brand">
-          <a href="index.html" class="brand">
-            <span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c-2.2 0-3 1.1-4.3 1.1C6.2 4.1 5 3.3 5 5.5c0 2.6.9 4 1.3 7 .3 2.4.9 6.5 2.4 6.5 1.2 0 1.1-3 1.6-4.6.3-1 .7-1.4 1.7-1.4s1.4.4 1.7 1.4c.5 1.6.4 4.6 1.6 4.6 1.5 0 2.1-4.1 2.4-6.5.4-3 1.3-4.4 1.3-7 0-2.2-1.2-1.4-2.7-1.4C15 4.1 14.2 3 12 3Z"/></svg></span>
-            <span class="brand-name">Dr. Siulik's<span>DENTAL CARE</span></span>
-          </a>
+          <a href="index.html" class="brand"><img src="images/logo-transparent.png" alt="Dr. Siulik's Dental Care" style="height:64px;width:auto;object-fit:contain;" /></a>
           <p>Patient-first dental care focused on comfort, honesty and a gentle modern experience for every smile in the family.</p>
           <div class="social-row">
             <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M14 8.5h-1.5c-.8 0-1.5.7-1.5 1.5v2h3l-.4 3H11v6"/></svg></a>
@@ -123,7 +112,6 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="treatments.html">Treatments</a></li>
-            <li><a href="smile-makeovers.html">Smile Makeovers</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="why-choose-us.html">Why Choose Us</a></li>
           </ul>
@@ -150,7 +138,7 @@
         </div>
         <div>
           <h5>Stay Updated</h5>
-          <p style="color:rgba(255,255,255,.55);font-size:14px;margin-bottom:14px;">Get gentle reminders and dental care tips. This demo form is not yet connected.</p>
+          <p style="color:rgba(255,255,255,.55);font-size:14px;margin-bottom:14px;">Get gentle reminders and dental care tips. We'll only use this to send appointment reminders and dental care tips.</p>
           <form class="newsletter-form" data-demo-form>
             <label class="sr-only" for="newsletter-email">Email address</label>
             <input id="newsletter-email" type="email" placeholder="Enter your email" required />
@@ -159,7 +147,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <span>&copy; <span data-year></span> Dr. Siulik's Dental Care. Demo website — all rights reserved.</span>
+        <span>&copy; <span data-year></span> Dr. Siulik's Dental Care. All rights reserved.</span>
         <nav>
           <a href="faq.html">FAQ</a>
           <a href="contact.html">Privacy Policy</a>

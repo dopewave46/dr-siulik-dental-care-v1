@@ -73,11 +73,29 @@
     });
   }
 
+  function buildWhatsAppMessage(s) {
+    const lines = [
+      "Hi! I'd like to book an appointment at Dr. Siulik's Dental Care.",
+      `Treatment: ${s.treatment || 'Not specified'}`,
+      `Date: ${s.date || 'Not specified'}`,
+      `Time: ${s.time || 'Not specified'}`,
+      `Name: ${s.name || 'Not specified'}`,
+      `Phone: ${s.phone || 'Not specified'}`,
+    ];
+    if (s.message) lines.push(`Note: ${s.message}`);
+    return lines.join('\n');
+  }
+
   const confirmBtn = wrap.querySelector('[data-confirm-booking]');
   confirmBtn?.addEventListener('click', () => {
     try {
       sessionStorage.setItem('demoBooking', JSON.stringify(state));
     } catch (e) {}
+    // Client-side JS cannot silently send a WhatsApp message — this opens
+    // WhatsApp with the booking details pre-filled; the patient still has
+    // to tap Send there for the clinic to actually receive it.
+    const waUrl = 'https://wa.me/7008675007?text=' + encodeURIComponent(buildWhatsAppMessage(state));
+    window.open(waUrl, '_blank', 'noopener');
     window.location.href = 'appointment-confirmation.html';
   });
 
@@ -183,4 +201,20 @@
     const el = document.querySelector(sel);
     if (el) el.textContent = val;
   });
+
+  // Point the WhatsApp button at the real booking details (fallback in case
+  // the auto-opened WhatsApp tab from the booking step was popup-blocked).
+  const waLink = document.querySelector('[data-c-whatsapp]');
+  if (waLink) {
+    const lines = [
+      "Hi! I'd like to book an appointment at Dr. Siulik's Dental Care.",
+      `Treatment: ${data.treatment || 'Not specified'}`,
+      `Date: ${data.date || 'Not specified'}`,
+      `Time: ${data.time || 'Not specified'}`,
+      `Name: ${data.name || 'Not specified'}`,
+      `Phone: ${data.phone || 'Not specified'}`,
+    ];
+    if (data.message) lines.push(`Note: ${data.message}`);
+    waLink.href = 'https://wa.me/7008675007?text=' + encodeURIComponent(lines.join('\n'));
+  }
 })();
