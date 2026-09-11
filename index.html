@@ -18,7 +18,7 @@
 <body class="">
   <header class="navbar">
     <div class="container nav-inner">
-      <a href="index.html" class="brand"><img src="images/logo-transparent.png" alt="Dr. Siulik's Dental Care" style="height:52px;width:auto;object-fit:contain;" /></a>
+      <a href="index.html" class="brand"><img src="images/logo-navbar.png" alt="Dr. Siulik's Dental Care" style="height:56px;width:auto;object-fit:contain;" /></a>
       <nav class="nav-links" aria-label="Primary">
         <a href="index.html" class="active">Home</a>
         <a href="about.html" class="">About</a>
@@ -416,39 +416,60 @@
     <!-- ============ TESTIMONIALS ============ -->
     <section class="section">
       <div class="container">
+        <div class="vt-wrap">
         <div class="flex items-center justify-between" style="flex-wrap:wrap;gap:16px;" data-reveal>
           <div class="section-head" style="margin-bottom:0;">
             <span class="eyebrow">Testimonials</span>
             <h2>Loved by our patients</h2>
+            <p style="margin-top:6px;">Real visits, told in patients' own words.</p>
           </div>
           <a class="btn btn-ghost" href="testimonials.html">View All Reviews <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
-        <!-- Captions generic ("Patient Testimonial") — no names/permission supplied. TO CONFIRM with clinic. -->
-        <div class="tflex" style="margin-top:26px;">
-          <article class="card" style="flex:none;width:min(260px, 70vw);overflow:hidden;" data-reveal="scale">
-            <div style="aspect-ratio:9/16;background:var(--navy-950);">
-              <video controls muted playsinline preload="metadata" style="width:100%;height:100%;object-fit:cover;display:block;">
+        <!-- Captions generic ("Patient Story") — no names/permission supplied. TO CONFIRM with clinic. -->
+        <div class="vt-grid" style="margin-top:32px;">
+          <article class="video-testimonial" data-reveal="scale">
+            <div class="vt-media">
+              <video muted playsinline preload="metadata">
                 <source src="videos/testimonial-01.mp4" type="video/mp4" />
                 Your browser doesn't support embedded videos.
               </video>
-            </div>
-            <div style="padding:14px 16px;">
-              <h5 style="margin:0 0 2px;">Patient Testimonial</h5>
-              <span style="font-size:12px;color:var(--ink-400);">Video review</span>
+              <button type="button" class="vt-toggle" aria-label="Play video">
+                <span class="vt-toggle-scrim"></span>
+                <span class="vt-toggle-icon">
+                  <svg class="i-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5-11-6.5Z"/></svg>
+                  <svg class="i-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg>
+                </span>
+              </button>
+              <button type="button" class="vt-mute" aria-label="Unmute video" aria-pressed="true">
+                <svg class="i-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9.5h3.5L12 6v12l-4.5-3.5H4Z"/><path d="m16 9 4.5 6M20.5 9 16 15"/></svg>
+                <svg class="i-unmuted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9.5h3.5L12 6v12l-4.5-3.5H4Z"/><path d="M15.5 9a4 4 0 0 1 0 6M18 6.8a7.5 7.5 0 0 1 0 10.4"/></svg>
+              </button>
+              <span class="vt-scrim-bottom"></span>
+              <span class="vt-tag"><span class="vt-tag-index">01</span><span class="vt-tag-label">Patient Story</span></span>
             </div>
           </article>
-          <article class="card" style="flex:none;width:min(260px, 70vw);overflow:hidden;" data-reveal="scale">
-            <div style="aspect-ratio:9/16;background:var(--navy-950);">
-              <video controls muted playsinline preload="metadata" style="width:100%;height:100%;object-fit:cover;display:block;">
+          <article class="video-testimonial" data-reveal="scale">
+            <div class="vt-media">
+              <video muted playsinline preload="metadata">
                 <source src="videos/testimonial-02.mp4" type="video/mp4" />
                 Your browser doesn't support embedded videos.
               </video>
-            </div>
-            <div style="padding:14px 16px;">
-              <h5 style="margin:0 0 2px;">Patient Testimonial</h5>
-              <span style="font-size:12px;color:var(--ink-400);">Video review</span>
+              <button type="button" class="vt-toggle" aria-label="Play video">
+                <span class="vt-toggle-scrim"></span>
+                <span class="vt-toggle-icon">
+                  <svg class="i-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5-11-6.5Z"/></svg>
+                  <svg class="i-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg>
+                </span>
+              </button>
+              <button type="button" class="vt-mute" aria-label="Unmute video" aria-pressed="true">
+                <svg class="i-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9.5h3.5L12 6v12l-4.5-3.5H4Z"/><path d="m16 9 4.5 6M20.5 9 16 15"/></svg>
+                <svg class="i-unmuted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9.5h3.5L12 6v12l-4.5-3.5H4Z"/><path d="M15.5 9a4 4 0 0 1 0 6M18 6.8a7.5 7.5 0 0 1 0 10.4"/></svg>
+              </button>
+              <span class="vt-scrim-bottom"></span>
+              <span class="vt-tag"><span class="vt-tag-index">02</span><span class="vt-tag-label">Patient Story</span></span>
             </div>
           </article>
+        </div>
         </div>
       </div>
     </section>
@@ -603,6 +624,7 @@
   <script src="js/booking.js"></script>
   <script src="js/main.js"></script>
   <script src="js/popup.js"></script>
+  <script src="js/video-testimonials.js"></script>
 
 </body>
 </html>

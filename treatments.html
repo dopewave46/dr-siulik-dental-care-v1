@@ -18,7 +18,7 @@
 <body class="">
   <header class="navbar">
     <div class="container nav-inner">
-      <a href="index.html" class="brand"><img src="images/logo-transparent.png" alt="Dr. Siulik's Dental Care" style="height:52px;width:auto;object-fit:contain;" /></a>
+      <a href="index.html" class="brand"><img src="images/logo-navbar.png" alt="Dr. Siulik's Dental Care" style="height:56px;width:auto;object-fit:contain;" /></a>
       <nav class="nav-links" aria-label="Primary">
         <a href="index.html" class="">Home</a>
         <a href="about.html" class="">About</a>
@@ -63,7 +63,6 @@
     <section class="page-hero">
       <span class="hero-blob b1"></span>
       <div class="container">
-        <div class="breadcrumb"><a href="index.html">Home</a> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9.5 6 6 6-6 6"/></svg> <span>Treatments</span></div>
         <span class="eyebrow">Our Treatments</span>
         <h1>Complete dental care, organised around you.</h1>
         <p class="lead">From routine prevention to full smile transformation — every treatment is delivered with the same patient-first care.</p>
@@ -71,10 +70,21 @@
     </section>
 
   <main>
+    <section class="section-tight" style="padding-bottom:0;">
+      <div class="container">
+        <div class="treatment-search" id="treatment-search" data-reveal>
+          <svg class="ts-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="text" id="treatment-search-input" placeholder="Search treatments — e.g. whitening, root canal, braces…" aria-label="Search treatments" autocomplete="off" />
+          <button type="button" class="ts-clear" id="treatment-search-clear" aria-label="Clear search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+        </div>
+        <p class="treatment-search-empty" id="treatment-search-empty" hidden>No treatments match your search. Try a different term or <a href="contact.html">ask us directly</a>.</p>
+      </div>
+    </section>
+
     <section class="section">
       <div class="container">
-        <div class="grid grid-2">
-        <article class="card" style="padding:30px;" data-reveal="scale">
+        <div class="grid grid-2" id="treatment-grid">
+        <article class="card" style="padding:30px;" data-reveal="scale" data-treatment-card>
           <span class="tcard-ic" style="margin-bottom:14px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 13h3.5l1.5-4 3 8 2-6 1.5 2H20"/><circle cx="12" cy="12" r="9"/></svg></span>
           <h3>Preventive Dentistry</h3>
           <p style="font-size:14.5px;">Regular care that stops problems before they start.</p>
@@ -86,7 +96,7 @@
           </ul>
           <a class="btn btn-ghost btn-sm" href="book-appointment.html">Book Appointment</a>
         </article>
-        <article class="card" style="padding:30px;" data-reveal="scale">
+        <article class="card" style="padding:30px;" data-reveal="scale" data-treatment-card>
           <span class="tcard-ic" style="margin-bottom:14px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 5 6v5.5c0 4.6 3 7.6 7 9 4-1.4 7-4.4 7-9V6l-7-2.5Z"/><path d="m8.7 12.2 2.3 2.3 4.3-4.6"/></svg></span>
           <h3>Restorative Dentistry</h3>
           <p style="font-size:14.5px;">Repairing and strengthening teeth affected by decay or damage.</p>
@@ -98,7 +108,7 @@
           </ul>
           <a class="btn btn-ghost btn-sm" href="book-appointment.html">Book Appointment</a>
         </article>
-        <article class="card" style="padding:30px;" data-reveal="scale">
+        <article class="card" style="padding:30px;" data-reveal="scale" data-treatment-card>
           <span class="tcard-ic" style="margin-bottom:14px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 19 5-5m0 0 5-5 2 2-5 5m-2-2 2 2m-9 3 2 2"/><path d="m16 3 5 5"/></svg></span>
           <h3>Surgical Dentistry</h3>
           <p style="font-size:14.5px;">Careful, comfortable surgical care when it's needed.</p>
@@ -110,7 +120,7 @@
           </ul>
           <a class="btn btn-ghost btn-sm" href="book-appointment.html">Book Appointment</a>
         </article>
-        <article class="card" style="padding:30px;" data-reveal="scale">
+        <article class="card" style="padding:30px;" data-reveal="scale" data-treatment-card>
           <span class="tcard-ic" style="margin-bottom:14px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 4 2.4 5.1 5.6.6-4.2 3.8 1.2 5.5L12 16.2 6.9 19l1.3-5.5-4.2-3.8 5.6-.6Z" fill="currentColor" stroke="none"/></svg></span>
           <h3>Smile &amp; Cosmetic Dentistry</h3>
           <p style="font-size:14.5px;">Refining shape, colour and symmetry for a natural, confident finish.</p>
@@ -122,7 +132,7 @@
           </ul>
           <a class="btn btn-ghost btn-sm" href="book-appointment.html">Book Appointment</a>
         </article>
-        <article class="card" style="padding:30px;" data-reveal="scale">
+        <article class="card" style="padding:30px;" data-reveal="scale" data-treatment-card>
           <span class="tcard-ic" style="margin-bottom:14px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4c.4 3 1.6 4.4 4.6 4.8-3 .4-4.2 1.6-4.6 4.6-.4-3-1.6-4.2-4.6-4.6C10.4 8.4 11.6 7 12 4Z"/><path d="M18.5 15c.2 1.3.7 1.8 2 2-1.3.2-1.8.7-2 2-.2-1.3-.7-1.8-2-2 1.3-.2 1.8-.7 2-2Z"/></svg></span>
           <h3>Orthodontics</h3>
           <p style="font-size:14.5px;">Straighten your smile with options for every lifestyle.</p>
@@ -133,7 +143,7 @@
           </ul>
           <a class="btn btn-ghost btn-sm" href="book-appointment.html">Book Appointment</a>
         </article>
-        <article class="card" style="padding:30px;" data-reveal="scale">
+        <article class="card" style="padding:30px;" data-reveal="scale" data-treatment-card>
           <span class="tcard-ic" style="margin-bottom:14px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c-2.2 0-3 1.1-4.3 1.1C6.2 4.1 5 3.3 5 5.5c0 2.6.9 4 1.3 7 .3 2.4.9 6.5 2.4 6.5 1.2 0 1.1-3 1.6-4.6.3-1 .7-1.4 1.7-1.4s1.4.4 1.7 1.4c.5 1.6.4 4.6 1.6 4.6 1.5 0 2.1-4.1 2.4-6.5.4-3 1.3-4.4 1.3-7 0-2.2-1.2-1.4-2.7-1.4C15 4.1 14.2 3 12 3Z"/></svg></span>
           <h3>Implant Dentistry</h3>
           <p style="font-size:14.5px;">Permanent, natural-looking replacements for missing teeth.</p>
@@ -144,7 +154,7 @@
           </ul>
           <a class="btn btn-ghost btn-sm" href="book-appointment.html">Book Appointment</a>
         </article>
-        <article class="card" style="padding:30px;grid-column:1 / -1;" data-reveal="scale">
+        <article class="card" style="padding:30px;grid-column:1 / -1;" data-reveal="scale" data-treatment-card>
           <div class="grid grid-2" style="align-items:center;gap:24px;">
             <div>
               <span class="tcard-ic" style="margin-bottom:14px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="8" r="2.6"/><circle cx="17" cy="8" r="2.6"/><path d="M2.5 19c.5-3 2.2-4.6 4.5-4.6s4 1.6 4.5 4.6M12.5 19c.5-3 2.2-4.6 4.5-4.6s4 1.6 4.5 4.6"/></svg></span>
@@ -335,6 +345,7 @@
   <script src="js/booking.js"></script>
   <script src="js/main.js"></script>
   <script src="js/popup.js"></script>
+  <script src="js/treatment-search.js"></script>
 
 </body>
 </html>
