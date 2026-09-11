@@ -10,7 +10,7 @@
   <meta property="og:description" content="Explore dental implants, root canal treatment, braces, whitening, veneers and more at Dr. Siulik's Dental Care." />
   <meta property="og:type" content="website" />
   <meta name="theme-color" content="#0a2540" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><rect width=%2224%22 height=%2224%22 rx=%226%22 fill=%22%230d7377%22/><text x=%2212%22 y=%2217%22 font-size=%2214%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22sans-serif%22>S</text></svg>" />
+  <link rel="icon" type="image/png" href="images/logo-transparent.png" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/responsive.css" />
 
@@ -18,15 +18,11 @@
 <body class="">
   <header class="navbar">
     <div class="container nav-inner">
-      <a href="index.html" class="brand">
-        <span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c-2.2 0-3 1.1-4.3 1.1C6.2 4.1 5 3.3 5 5.5c0 2.6.9 4 1.3 7 .3 2.4.9 6.5 2.4 6.5 1.2 0 1.1-3 1.6-4.6.3-1 .7-1.4 1.7-1.4s1.4.4 1.7 1.4c.5 1.6.4 4.6 1.6 4.6 1.5 0 2.1-4.1 2.4-6.5.4-3 1.3-4.4 1.3-7 0-2.2-1.2-1.4-2.7-1.4C15 4.1 14.2 3 12 3Z"/></svg></span>
-        <span class="brand-name">Dr. Siulik's<span>DENTAL CARE</span></span>
-      </a>
+      <a href="index.html" class="brand"><img src="images/logo-navbar.png" alt="Dr. Siulik's Dental Care" style="height:56px;width:auto;object-fit:contain;" /></a>
       <nav class="nav-links" aria-label="Primary">
         <a href="index.html" class="">Home</a>
         <a href="about.html" class="">About</a>
         <a href="treatments.html" class="active">Treatments</a>
-        <a href="smile-makeovers.html" class="">Smile Makeovers</a>
         <a href="gallery.html" class="">Gallery</a>
         <a href="testimonials.html" class="">Testimonials</a>
         <a href="contact.html" class="">Contact</a>
@@ -43,17 +39,13 @@
 
   <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
     <div class="mobile-menu-top">
-      <a href="index.html" class="brand">
-        <span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c-2.2 0-3 1.1-4.3 1.1C6.2 4.1 5 3.3 5 5.5c0 2.6.9 4 1.3 7 .3 2.4.9 6.5 2.4 6.5 1.2 0 1.1-3 1.6-4.6.3-1 .7-1.4 1.7-1.4s1.4.4 1.7 1.4c.5 1.6.4 4.6 1.6 4.6 1.5 0 2.1-4.1 2.4-6.5.4-3 1.3-4.4 1.3-7 0-2.2-1.2-1.4-2.7-1.4C15 4.1 14.2 3 12 3Z"/></svg></span>
-        <span class="brand-name">Dr. Siulik's<span>DENTAL CARE</span></span>
-      </a>
+      <a href="index.html" class="brand"><img src="images/logo-transparent.png" alt="Dr. Siulik's Dental Care" style="height:52px;width:auto;object-fit:contain;" /></a>
       <button class="mobile-close" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
     </div>
     <nav class="mobile-nav" aria-label="Mobile Primary">
       <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="treatments.html">Treatments</a>
-        <a href="smile-makeovers.html">Smile Makeovers</a>
         <a href="gallery.html">Gallery</a>
         <a href="testimonials.html">Testimonials</a>
         <a href="contact.html">Contact</a>
@@ -71,148 +63,148 @@
     <section class="page-hero">
       <span class="hero-blob b1"></span>
       <div class="container">
-        <div class="breadcrumb"><a href="index.html">Home</a> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9.5 6 6 6-6 6"/></svg> <span>Treatments</span></div>
         <span class="eyebrow">Our Treatments</span>
-        <h1>An elegant treatment directory, built around comfort.</h1>
-        <p class="lead">Every treatment is delivered with the same patient-first care — explore what we offer below.</p>
+        <h1>Complete dental care, organised around you.</h1>
+        <p class="lead">From routine prevention to full smile transformation — every treatment is delivered with the same patient-first care.</p>
       </div>
     </section>
 
   <main>
+    <section class="section-tight" style="padding-bottom:0;">
+      <div class="container">
+        <div class="treatment-search" id="treatment-search" data-reveal>
+          <svg class="ts-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="text" id="treatment-search-input" placeholder="Search treatments — e.g. whitening, root canal, braces…" aria-label="Search treatments" autocomplete="off" />
+          <button type="button" class="ts-clear" id="treatment-search-clear" aria-label="Clear search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+        </div>
+        <p class="treatment-search-empty" id="treatment-search-empty" hidden>No treatments match your search. Try a different term or <a href="contact.html">ask us directly</a>.</p>
+      </div>
+    </section>
+
     <section class="section">
       <div class="container">
-        <div class="grid grid-4"><article class="tcard" data-reveal="scale">
-          <div class="tcard-top">
-            <span class="tcard-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c-2.2 0-3 1.1-4.3 1.1C6.2 4.1 5 3.3 5 5.5c0 2.6.9 4 1.3 7 .3 2.4.9 6.5 2.4 6.5 1.2 0 1.1-3 1.6-4.6.3-1 .7-1.4 1.7-1.4s1.4.4 1.7 1.4c.5 1.6.4 4.6 1.6 4.6 1.5 0 2.1-4.1 2.4-6.5.4-3 1.3-4.4 1.3-7 0-2.2-1.2-1.4-2.7-1.4C15 4.1 14.2 3 12 3Z"/></svg></span>
-          </div>
-          <h3>Dental Implants</h3>
-          <p>Permanent, natural-looking replacements for missing teeth.</p>
-          <div class="tcard-foot">
-            <a class="tcard-link" href="treatments.html">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            <a class="btn btn-ghost btn-sm" href="book-appointment.html">Book</a>
-          </div>
+        <div class="grid grid-2" id="treatment-grid">
+        <article class="card" style="padding:30px;" data-reveal="scale" data-treatment-card>
+          <span class="tcard-ic" style="margin-bottom:14px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 13h3.5l1.5-4 3 8 2-6 1.5 2H20"/><circle cx="12" cy="12" r="9"/></svg></span>
+          <h3>Preventive Dentistry</h3>
+          <p style="font-size:14.5px;">Regular care that stops problems before they start.</p>
+          <ul style="margin:14px 0 18px;display:grid;gap:8px;">
+            <li style="display:flex;gap:10px;align-items:center;font-size:14px;color:var(--ink-600);"><span style="width:5px;height:5px;border-radius:50%;background:var(--teal-500);flex:none;"></span>Dental Check-ups</li>
+            <li style="display:flex;gap:10px;align-items:center;font-size:14px;color:var(--ink-600);"><span style="width:5px;height:5px;border-radius:50%;background:var(--teal-500);flex:none;"></span>Scaling &amp; Polishing</li>
+            <li style="display:flex;gap:10px;align-items:center;font-size:14px;color:var(--ink-600);"><span style="width:5px;height:5px;border-radius:50%;background:var(--teal-500);flex:none;"></span>Oral Hygiene Care</li>
+            <li style="display:flex;gap:10px;align-items:center;font-size:14px;color:var(--ink-600);"><span style="width:5px;height:5px;border-radius:50%;background:var(--teal-500);flex:none;"></span>Fluoride Treatment</li>
+          </ul>
+          <a class="btn btn-ghost btn-sm" href="book-appointment.html">Book Appointment</a>
         </article>
-        <article class="tcard" data-reveal="scale">
-          <div class="tcard-top">
-            <span class="tcard-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 5 6v5.5c0 4.6 3 7.6 7 9 4-1.4 7-4.4 7-9V6l-7-2.5Z"/><path d="m8.7 12.2 2.3 2.3 4.3-4.6"/></svg></span>
-          </div>
-          <h3>Root Canal Treatment</h3>
-          <p>Gentle, pain-focused care to save an infected tooth.</p>
-          <div class="tcard-foot">
-            <a class="tcard-link" href="treatments.html">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            <a class="btn btn-ghost btn-sm" href="book-appointment.html">Book</a>
-          </div>
+        <article class="card" style="padding:30px;" data-reveal="scale" data-treatment-card>
+          <span class="tcard-ic" style="margin-bottom:14px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 5 6v5.5c0 4.6 3 7.6 7 9 4-1.4 7-4.4 7-9V6l-7-2.5Z"/><path d="m8.7 12.2 2.3 2.3 4.3-4.6"/></svg></span>
+          <h3>Restorative Dentistry</h3>
+          <p style="font-size:14.5px;">Repairing and strengthening teeth affected by decay or damage.</p>
+          <ul style="margin:14px 0 18px;display:grid;gap:8px;">
+            <li style="display:flex;gap:10px;align-items:center;font-size:14px;color:var(--ink-600);"><span style="width:5px;height:5px;border-radius:50%;background:var(--teal-500);flex:none;"></span>Tooth-Coloured Fillings</li>
+            <li style="display:flex;gap:10px;align-items:center;font-size:14px;color:var(--ink-600);"><span style="width:5px;height:5px;border-radius:50%;background:var(--teal-500);flex:none;"></span>Root Canal Treatment</li>
+            <li style="display:flex;gap:10px;align-items:center;font-size:14px;color:var(--ink-600);"><span style="width:5px;height:5px;border-radius:50%;background:var(--teal-500);flex:none;"></span>Crowns &amp; Bridges</li>
+            <li style="display:flex;gap:10px;align-items:center;font-size:14px;color:var(--ink-600);"><span style="width:5px;height:5px;border-radius:50%;background:var(--teal-500);flex:none;"></span>Dentures</li>
+          </ul>
+          <a class="btn btn-ghost btn-sm" href="book-appointment.html">Book Appointment</a>
         </article>
-        <article class="tcard" data-reveal="scale">
-          <div class="tcard-top">
-            <span class="tcard-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4c.4 3 1.6 4.4 4.6 4.8-3 .4-4.2 1.6-4.6 4.6-.4-3-1.6-4.2-4.6-4.6C10.4 8.4 11.6 7 12 4Z"/><path d="M18.5 15c.2 1.3.7 1.8 2 2-1.3.2-1.8.7-2 2-.2-1.3-.7-1.8-2-2 1.3-.2 1.8-.7 2-2Z"/></svg></span>
-          </div>
-          <h3>Braces & Clear Aligners</h3>
-          <p>Straighten your smile with options for every lifestyle.</p>
-          <div class="tcard-foot">
-            <a class="tcard-link" href="treatments.html">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            <a class="btn btn-ghost btn-sm" href="book-appointment.html">Book</a>
-          </div>
+        <article class="card" style="padding:30px;" data-reveal="scale" data-treatment-card>
+          <span class="tcard-ic" style="margin-bottom:14px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 19 5-5m0 0 5-5 2 2-5 5m-2-2 2 2m-9 3 2 2"/><path d="m16 3 5 5"/></svg></span>
+          <h3>Surgical Dentistry</h3>
+          <p style="font-size:14.5px;">Careful, comfortable surgical care when it's needed.</p>
+          <ul style="margin:14px 0 18px;display:grid;gap:8px;">
+            <li style="display:flex;gap:10px;align-items:center;font-size:14px;color:var(--ink-600);"><span style="width:5px;height:5px;border-radius:50%;background:var(--teal-500);flex:none;"></span>Simple Extractions</li>
+            <li style="display:flex;gap:10px;align-items:center;font-size:14px;color:var(--ink-600);"><span style="width:5px;height:5px;border-radius:50%;background:var(--teal-500);flex:none;"></span>Surgical Extractions</li>
+            <li style="display:flex;gap:10px;align-items:center;font-size:14px;color:var(--ink-600);"><span style="width:5px;height:5px;border-radius:50%;background:var(--teal-500);flex:none;"></span>Wisdom Tooth Treatment</li>
+            <li style="display:flex;gap:10px;align-items:center;font-size:14px;color:var(--ink-600);"><span style="width:5px;height:5px;border-radius:50%;background:var(--teal-500);flex:none;"></span>Gum Surgery</li>
+          </ul>
+          <a class="btn btn-ghost btn-sm" href="book-appointment.html">Book Appointment</a>
         </article>
-        <article class="tcard" data-reveal="scale">
-          <div class="tcard-top">
-            <span class="tcard-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4"/><path d="M9 9h6v6H9z"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2"/></svg></span>
-          </div>
-          <h3>Teeth Whitening</h3>
-          <p>Brighten your smile with a comfortable, guided treatment.</p>
-          <div class="tcard-foot">
-            <a class="tcard-link" href="treatments.html">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            <a class="btn btn-ghost btn-sm" href="book-appointment.html">Book</a>
-          </div>
+        <article class="card" style="padding:30px;" data-reveal="scale" data-treatment-card>
+          <span class="tcard-ic" style="margin-bottom:14px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 4 2.4 5.1 5.6.6-4.2 3.8 1.2 5.5L12 16.2 6.9 19l1.3-5.5-4.2-3.8 5.6-.6Z" fill="currentColor" stroke="none"/></svg></span>
+          <h3>Smile &amp; Cosmetic Dentistry</h3>
+          <p style="font-size:14.5px;">Refining shape, colour and symmetry for a natural, confident finish.</p>
+          <ul style="margin:14px 0 18px;display:grid;gap:8px;">
+            <li style="display:flex;gap:10px;align-items:center;font-size:14px;color:var(--ink-600);"><span style="width:5px;height:5px;border-radius:50%;background:var(--teal-500);flex:none;"></span>Smile Makeover</li>
+            <li style="display:flex;gap:10px;align-items:center;font-size:14px;color:var(--ink-600);"><span style="width:5px;height:5px;border-radius:50%;background:var(--teal-500);flex:none;"></span>Veneers / Laminates</li>
+            <li style="display:flex;gap:10px;align-items:center;font-size:14px;color:var(--ink-600);"><span style="width:5px;height:5px;border-radius:50%;background:var(--teal-500);flex:none;"></span>Teeth Whitening</li>
+            <li style="display:flex;gap:10px;align-items:center;font-size:14px;color:var(--ink-600);"><span style="width:5px;height:5px;border-radius:50%;background:var(--teal-500);flex:none;"></span>Aesthetic Restorations</li>
+          </ul>
+          <a class="btn btn-ghost btn-sm" href="book-appointment.html">Book Appointment</a>
         </article>
-        <article class="tcard" data-reveal="scale">
-          <div class="tcard-top">
-            <span class="tcard-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="10" r="6.5"/><path d="m8.3 10.3 2.3 2.3 4.4-4.7"/><path d="m8.5 16 -1.5 5 5-2.3 5 2.3-1.5-5"/></svg></span>
-          </div>
-          <h3>Veneers</h3>
-          <p>Refine shape, colour and symmetry for a natural finish.</p>
-          <div class="tcard-foot">
-            <a class="tcard-link" href="treatments.html">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            <a class="btn btn-ghost btn-sm" href="book-appointment.html">Book</a>
-          </div>
+        <article class="card" style="padding:30px;" data-reveal="scale" data-treatment-card>
+          <span class="tcard-ic" style="margin-bottom:14px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4c.4 3 1.6 4.4 4.6 4.8-3 .4-4.2 1.6-4.6 4.6-.4-3-1.6-4.2-4.6-4.6C10.4 8.4 11.6 7 12 4Z"/><path d="M18.5 15c.2 1.3.7 1.8 2 2-1.3.2-1.8.7-2 2-.2-1.3-.7-1.8-2-2 1.3-.2 1.8-.7 2-2Z"/></svg></span>
+          <h3>Orthodontics</h3>
+          <p style="font-size:14.5px;">Straighten your smile with options for every lifestyle.</p>
+          <ul style="margin:14px 0 18px;display:grid;gap:8px;">
+            <li style="display:flex;gap:10px;align-items:center;font-size:14px;color:var(--ink-600);"><span style="width:5px;height:5px;border-radius:50%;background:var(--teal-500);flex:none;"></span>Braces</li>
+            <li style="display:flex;gap:10px;align-items:center;font-size:14px;color:var(--ink-600);"><span style="width:5px;height:5px;border-radius:50%;background:var(--teal-500);flex:none;"></span>Clear Aligners</li>
+            <li style="display:flex;gap:10px;align-items:center;font-size:14px;color:var(--ink-600);"><span style="width:5px;height:5px;border-radius:50%;background:var(--teal-500);flex:none;"></span>Orthodontic Consultation</li>
+          </ul>
+          <a class="btn btn-ghost btn-sm" href="book-appointment.html">Book Appointment</a>
         </article>
-        <article class="tcard" data-reveal="scale">
-          <div class="tcard-top">
-            <span class="tcard-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 5 6v5.5c0 4.6 3 7.6 7 9 4-1.4 7-4.4 7-9V6l-7-2.5Z"/><path d="m8.7 12.2 2.3 2.3 4.3-4.6"/></svg></span>
-          </div>
-          <h3>Crowns & Bridges</h3>
-          <p>Restore strength and function to damaged teeth.</p>
-          <div class="tcard-foot">
-            <a class="tcard-link" href="treatments.html">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            <a class="btn btn-ghost btn-sm" href="book-appointment.html">Book</a>
-          </div>
+        <article class="card" style="padding:30px;" data-reveal="scale" data-treatment-card>
+          <span class="tcard-ic" style="margin-bottom:14px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c-2.2 0-3 1.1-4.3 1.1C6.2 4.1 5 3.3 5 5.5c0 2.6.9 4 1.3 7 .3 2.4.9 6.5 2.4 6.5 1.2 0 1.1-3 1.6-4.6.3-1 .7-1.4 1.7-1.4s1.4.4 1.7 1.4c.5 1.6.4 4.6 1.6 4.6 1.5 0 2.1-4.1 2.4-6.5.4-3 1.3-4.4 1.3-7 0-2.2-1.2-1.4-2.7-1.4C15 4.1 14.2 3 12 3Z"/></svg></span>
+          <h3>Implant Dentistry</h3>
+          <p style="font-size:14.5px;">Permanent, natural-looking replacements for missing teeth.</p>
+          <ul style="margin:14px 0 18px;display:grid;gap:8px;">
+            <li style="display:flex;gap:10px;align-items:center;font-size:14px;color:var(--ink-600);"><span style="width:5px;height:5px;border-radius:50%;background:var(--teal-500);flex:none;"></span>Dental Implants</li>
+            <li style="display:flex;gap:10px;align-items:center;font-size:14px;color:var(--ink-600);"><span style="width:5px;height:5px;border-radius:50%;background:var(--teal-500);flex:none;"></span>Implant-Supported Restorations</li>
+            <li style="display:flex;gap:10px;align-items:center;font-size:14px;color:var(--ink-600);"><span style="width:5px;height:5px;border-radius:50%;background:var(--teal-500);flex:none;"></span>Implant Treatment Planning</li>
+          </ul>
+          <a class="btn btn-ghost btn-sm" href="book-appointment.html">Book Appointment</a>
         </article>
-        <article class="tcard" data-reveal="scale">
-          <div class="tcard-top">
-            <span class="tcard-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4c.4 3 1.6 4.4 4.6 4.8-3 .4-4.2 1.6-4.6 4.6-.4-3-1.6-4.2-4.6-4.6C10.4 8.4 11.6 7 12 4Z"/><path d="M18.5 15c.2 1.3.7 1.8 2 2-1.3.2-1.8.7-2 2-.2-1.3-.7-1.8-2-2 1.3-.2 1.8-.7 2-2Z"/></svg></span>
+        <article class="card" style="padding:30px;grid-column:1 / -1;" data-reveal="scale" data-treatment-card>
+          <div class="grid grid-2" style="align-items:center;gap:24px;">
+            <div>
+              <span class="tcard-ic" style="margin-bottom:14px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="8" r="2.6"/><circle cx="17" cy="8" r="2.6"/><path d="M2.5 19c.5-3 2.2-4.6 4.5-4.6s4 1.6 4.5 4.6M12.5 19c.5-3 2.2-4.6 4.5-4.6s4 1.6 4.5 4.6"/></svg></span>
+              <h3>Child Dentistry</h3>
+              <p style="font-size:14.5px;">Friendly, patient care built for younger smiles.</p>
+            </div>
+            <ul style="margin:0;display:grid;gap:8px;">
+              <li style="display:flex;gap:10px;align-items:center;font-size:14px;color:var(--ink-600);"><span style="width:5px;height:5px;border-radius:50%;background:var(--teal-500);flex:none;"></span>Dental Check-ups</li>
+              <li style="display:flex;gap:10px;align-items:center;font-size:14px;color:var(--ink-600);"><span style="width:5px;height:5px;border-radius:50%;background:var(--teal-500);flex:none;"></span>Preventive Care</li>
+              <li style="display:flex;gap:10px;align-items:center;font-size:14px;color:var(--ink-600);"><span style="width:5px;height:5px;border-radius:50%;background:var(--teal-500);flex:none;"></span>Child-Friendly Dental Treatment</li>
+            </ul>
           </div>
-          <h3>Scaling & Polishing</h3>
-          <p>Deep cleaning that keeps gums and enamel healthy.</p>
-          <div class="tcard-foot">
-            <a class="tcard-link" href="treatments.html">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            <a class="btn btn-ghost btn-sm" href="book-appointment.html">Book</a>
-          </div>
+          <a class="btn btn-ghost btn-sm" href="book-appointment.html" style="margin-top:18px;">Book Appointment</a>
         </article>
-        <article class="tcard" data-reveal="scale">
-          <div class="tcard-top">
-            <span class="tcard-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 4 2.4 5.1 5.6.6-4.2 3.8 1.2 5.5L12 16.2 6.9 19l1.3-5.5-4.2-3.8 5.6-.6Z" fill="currentColor" stroke="none"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TREATMENT IN ACTION ============ -->
+    <section class="section" style="background:var(--ice-50);">
+      <div class="container">
+        <div class="grid grid-2" style="align-items:center;gap:48px;">
+          <div style="border-radius:var(--r-lg);overflow:hidden;aspect-ratio:3/4;max-width:420px;margin:0 auto;" data-reveal="left">
+            <img src="images/treatment-checkup-in-action.jpg" alt="A dental check-up in progress at Dr. Siulik's Dental Care" style="width:100%;height:100%;object-fit:cover;object-position:top;" />
           </div>
-          <h3>Smile Design</h3>
-          <p>A personalised plan to reshape your whole smile.</p>
-          <div class="tcard-foot">
-            <a class="tcard-link" href="treatments.html">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            <a class="btn btn-ghost btn-sm" href="book-appointment.html">Book</a>
+          <div data-reveal="right">
+            <span class="eyebrow">In the Chair</span>
+            <h2>Careful, attentive treatment at every step</h2>
+            <p>Every procedure — from a routine check-up to a full smile makeover — is carried out with the same close attention to comfort, precision and hygiene.</p>
+            <a class="btn btn-primary" href="book-appointment.html">Book an Appointment <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           </div>
-        </article>
-        <article class="tcard" data-reveal="scale">
-          <div class="tcard-top">
-            <span class="tcard-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="8" r="2.6"/><circle cx="17" cy="8" r="2.6"/><path d="M2.5 19c.5-3 2.2-4.6 4.5-4.6s4 1.6 4.5 4.6M12.5 19c.5-3 2.2-4.6 4.5-4.6s4 1.6 4.5 4.6"/></svg></span>
-          </div>
-          <h3>Child Dentistry</h3>
-          <p>Friendly, patient care built for younger smiles.</p>
-          <div class="tcard-foot">
-            <a class="tcard-link" href="treatments.html">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            <a class="btn btn-ghost btn-sm" href="book-appointment.html">Book</a>
-          </div>
-        </article>
-        <article class="tcard" data-reveal="scale">
-          <div class="tcard-top">
-            <span class="tcard-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 19 5-5m0 0 5-5 2 2-5 5m-2-2 2 2m-9 3 2 2"/><path d="m16 3 5 5"/></svg></span>
-          </div>
-          <h3>Tooth Extraction</h3>
-          <p>Safe, careful removal when a tooth can't be saved.</p>
-          <div class="tcard-foot">
-            <a class="tcard-link" href="treatments.html">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            <a class="btn btn-ghost btn-sm" href="book-appointment.html">Book</a>
-          </div>
-        </article>
-        <article class="tcard" data-reveal="scale">
-          <div class="tcard-top">
-            <span class="tcard-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></span>
-          </div>
-          <h3>Emergency Dentistry</h3>
-          <p>Prompt attention when dental pain can't wait.</p>
-          <div class="tcard-foot">
-            <a class="tcard-link" href="treatments.html">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            <a class="btn btn-ghost btn-sm" href="book-appointment.html">Book</a>
-          </div>
-        </article>
-        <article class="tcard" data-reveal="scale">
-          <div class="tcard-top">
-            <span class="tcard-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 13h3.5l1.5-4 3 8 2-6 1.5 2H20"/><circle cx="12" cy="12" r="9"/></svg></span>
-          </div>
-          <h3>Diagnostics & Checkups</h3>
-          <p>Thorough exams to catch concerns early.</p>
-          <div class="tcard-foot">
-            <a class="tcard-link" href="treatments.html">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            <a class="btn btn-ghost btn-sm" href="book-appointment.html">Book</a>
-          </div>
-        </article></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TECHNOLOGY ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head center" data-reveal>
+          <span class="eyebrow">Technology</span>
+          <h2>Modern Technology, Thoughtful Dentistry</h2>
+        </div>
+        <div class="grid grid-3">
+          <div class="card" style="padding:24px;" data-reveal="scale"><span class="tcard-ic" style="margin-bottom:14px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M3.5 9.5h17M8 3v4M16 3v4"/></svg></span><h3 style="font-size:17px;">Digital X-Rays</h3><p style="font-size:14px;">Faster, lower-radiation imaging for accurate diagnosis.</p></div>
+          <div class="card" style="padding:24px;" data-reveal="scale"><span class="tcard-ic" style="margin-bottom:14px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M8 12h8M12 8v8"/></svg></span><h3 style="font-size:17px;">Digital Scanning</h3><p style="font-size:14px;">Precise digital impressions for a more comfortable experience.</p></div>
+          <div class="card" style="padding:24px;" data-reveal="scale"><span class="tcard-ic" style="margin-bottom:14px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 5 6v5.5c0 4.6 3 7.6 7 9 4-1.4 7-4.4 7-9V6l-7-2.5Z"/><path d="m8.7 12.2 2.3 2.3 4.3-4.6"/></svg></span><h3 style="font-size:17px;">Endodontic Technology</h3><p style="font-size:14px;">Advanced root canal equipment for precise, gentler treatment.</p></div>
+          <div class="card" style="padding:24px;" data-reveal="scale"><span class="tcard-ic" style="margin-bottom:14px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4c.4 3 1.6 4.4 4.6 4.8-3 .4-4.2 1.6-4.6 4.6-.4-3-1.6-4.2-4.6-4.6C10.4 8.4 11.6 7 12 4Z"/><path d="M18.5 15c.2 1.3.7 1.8 2 2-1.3.2-1.8.7-2 2-.2-1.3-.7-1.8-2-2 1.3-.2 1.8-.7 2-2Z"/></svg></span><h3 style="font-size:17px;">Laser Dentistry</h3><p style="font-size:14px;">Minimally invasive treatment options for select procedures.</p></div>
+          <div class="card" style="padding:24px;" data-reveal="scale"><span class="tcard-ic" style="margin-bottom:14px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c-2.2 0-3 1.1-4.3 1.1C6.2 4.1 5 3.3 5 5.5c0 2.6.9 4 1.3 7 .3 2.4.9 6.5 2.4 6.5 1.2 0 1.1-3 1.6-4.6.3-1 .7-1.4 1.7-1.4s1.4.4 1.7 1.4c.5 1.6.4 4.6 1.6 4.6 1.5 0 2.1-4.1 2.4-6.5.4-3 1.3-4.4 1.3-7 0-2.2-1.2-1.4-2.7-1.4C15 4.1 14.2 3 12 3Z"/></svg></span><h3 style="font-size:17px;">Modern Implant Equipment</h3><p style="font-size:14px;">Precision tools that support predictable implant outcomes.</p></div>
+          <div class="card" style="padding:24px;" data-reveal="scale"><span class="tcard-ic" style="margin-bottom:14px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 13 4.5 4.5L19 8"/></svg></span><h3 style="font-size:17px;">Advanced Sterilisation Protocols</h3><p style="font-size:14px;">Rigorous hygiene standards for your safety at every visit.</p></div>
+        </div>
       </div>
     </section>
 
@@ -245,10 +237,7 @@
     <div class="container">
       <div class="footer-top">
         <div class="footer-brand">
-          <a href="index.html" class="brand">
-            <span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c-2.2 0-3 1.1-4.3 1.1C6.2 4.1 5 3.3 5 5.5c0 2.6.9 4 1.3 7 .3 2.4.9 6.5 2.4 6.5 1.2 0 1.1-3 1.6-4.6.3-1 .7-1.4 1.7-1.4s1.4.4 1.7 1.4c.5 1.6.4 4.6 1.6 4.6 1.5 0 2.1-4.1 2.4-6.5.4-3 1.3-4.4 1.3-7 0-2.2-1.2-1.4-2.7-1.4C15 4.1 14.2 3 12 3Z"/></svg></span>
-            <span class="brand-name">Dr. Siulik's<span>DENTAL CARE</span></span>
-          </a>
+          <a href="index.html" class="brand"><img src="images/logo-transparent.png" alt="Dr. Siulik's Dental Care" style="height:64px;width:auto;object-fit:contain;" /></a>
           <p>Patient-first dental care focused on comfort, honesty and a gentle modern experience for every smile in the family.</p>
           <div class="social-row">
             <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M14 8.5h-1.5c-.8 0-1.5.7-1.5 1.5v2h3l-.4 3H11v6"/></svg></a>
@@ -262,7 +251,6 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="treatments.html">Treatments</a></li>
-            <li><a href="smile-makeovers.html">Smile Makeovers</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="why-choose-us.html">Why Choose Us</a></li>
           </ul>
@@ -289,7 +277,7 @@
         </div>
         <div>
           <h5>Stay Updated</h5>
-          <p style="color:rgba(255,255,255,.55);font-size:14px;margin-bottom:14px;">Get gentle reminders and dental care tips. This demo form is not yet connected.</p>
+          <p style="color:rgba(255,255,255,.55);font-size:14px;margin-bottom:14px;">Get gentle reminders and dental care tips. We'll only use this to send appointment reminders and dental care tips.</p>
           <form class="newsletter-form" data-demo-form>
             <label class="sr-only" for="newsletter-email">Email address</label>
             <input id="newsletter-email" type="email" placeholder="Enter your email" required />
@@ -298,7 +286,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <span>&copy; <span data-year></span> Dr. Siulik's Dental Care. Demo website — all rights reserved.</span>
+        <span>&copy; <span data-year></span> Dr. Siulik's Dental Care. All rights reserved.</span>
         <nav>
           <a href="faq.html">FAQ</a>
           <a href="contact.html">Privacy Policy</a>
@@ -357,6 +345,7 @@
   <script src="js/booking.js"></script>
   <script src="js/main.js"></script>
   <script src="js/popup.js"></script>
+  <script src="js/treatment-search.js"></script>
 
 </body>
 </html>
